@@ -30,7 +30,7 @@ services:
           name: n8n-db
           property: password
       - key: WEBHOOK_URL
-        value: WEBHOOK_URL: https://n8n.onrender.com/
+        value: https://n8n.onrender.com/
     disk:
       name: n8n-disk
       mountPath: /home/node/.n8n

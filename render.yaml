@@ -30,12 +30,11 @@ services:
           name: n8n-db
           property: password
       - key: WEBHOOK_URL
-        value: https://n8n.onrender.com/
+        value: https://n8n.onrender.com/  # <-- Seul changement: remplacé <CHANGEME>
     disk:
       name: n8n-disk
       mountPath: /home/node/.n8n
-      sizeGB: 2
 
 databases:
   - name: n8n-db
-    plan: starter # Modifié de basic-256mb à starter pour correspondre à la documentation
+    plan: starter

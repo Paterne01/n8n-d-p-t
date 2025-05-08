@@ -5,7 +5,6 @@ services:
     region: oregon # optional (defaults to oregon)
     plan: standard # optional (defaults to starter)
     branch: main # optional (defaults to master)
-    # dockerCommand: ./webdis.sh # optional (defaults to Dockerfile command)
     numInstances: 1
     healthCheckPath: /
     envVars:
@@ -38,4 +37,4 @@ services:
 
 databases:
   - name: n8n-db
-    plan: basic-256mb
+    plan: starter # Modifié de basic-256mb à starter pour correspondre à la documentation
